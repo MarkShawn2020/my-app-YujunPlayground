@@ -1,5 +1,5 @@
 import {Alert, Button, StyleSheet, Text, View} from 'react-native';
-import {images, TOTAL, WIDTH} from './const';
+import {APP_NAME, images, TOTAL, WIDTH} from './const';
 import React, {useState} from 'react';
 import {seq2cell} from './ds/cell';
 import _ from 'lodash';
@@ -46,7 +46,7 @@ export const Gallery = () => {
   return (
     <View style={style.section}>
       <View>
-        <Text style={style.title}>羽君遊樂場（一）/ 拼圖遊戲</Text>
+        <Text style={style.title}>{APP_NAME}（一）/ 拼圖遊戲</Text>
 
         <Text style={style.desc}>將圖片滑動到合適的地方就可以了哦~</Text>
       </View>

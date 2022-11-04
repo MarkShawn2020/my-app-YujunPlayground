@@ -23,3 +23,5 @@ export const images = [
   require('../assets/images/syj/9.jpg'),
 ];
 console.log({images});
+
+export const APP_NAME = '羽君遊樂園';

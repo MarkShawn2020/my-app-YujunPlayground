@@ -487,10 +487,10 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6RPPQTMWY8;
+				DEVELOPMENT_TEAM = 2342PJG9JL;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = huarongdao/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "蘇羽君的遊樂場";
+				INFOPLIST_KEY_CFBundleDisplayName = "羽君遊樂園";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,7 +503,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = markshawn.reactnative.suyujun;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = markshawn.suyujun;
 				PRODUCT_NAME = huarongdao;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -519,9 +519,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6RPPQTMWY8;
+				DEVELOPMENT_TEAM = 2342PJG9JL;
 				INFOPLIST_FILE = huarongdao/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "蘇羽君的遊樂場";
+				INFOPLIST_KEY_CFBundleDisplayName = "羽君遊樂園";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.kids-games";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +534,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = markshawn.reactnative.suyujun;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = markshawn.suyujun;
 				PRODUCT_NAME = huarongdao;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
