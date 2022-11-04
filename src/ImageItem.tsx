@@ -14,14 +14,14 @@ import {
   Text,
 } from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
-import {COLS, IMAGE_WIDTH, ROWS} from './const';
+import {COLS, IMAGE_WIDTH, images, ROWS} from './const';
 import {cropImage} from './utils/cropImage';
 
 export interface ImageItemProps {
   id: number;
   cell: ICell;
   showId: boolean;
-  imageName: string;
+  imageSeq: number;
   targetCell: ICell;
   doSwap: Function;
 }
@@ -39,7 +39,7 @@ export const ImageItem = (props: ImageItemProps) => {
       ...seq2cell(props.id),
       rows: ROWS,
       cols: COLS,
-      image: `/Users/mark/my-coding/huarongdao/assets/images/syj/${props.imageName}`,
+      image: Image.resolveAssetSource(images[props.imageSeq]).uri,
     })
       .then(url => {
         setImg(url);
@@ -47,7 +47,7 @@ export const ImageItem = (props: ImageItemProps) => {
       .catch(e => {
         console.error(e);
       });
-  }, [props.imageName, props.id, props.cell]);
+  }, [props.imageSeq, props.id, props.cell]);
 
   const panResponder = useRef<PanResponderInstance>();
   panResponder.current = PanResponder.create({
@@ -103,7 +103,7 @@ export const ImageItem = (props: ImageItemProps) => {
       }}
       {...panResponder.current.panHandlers}>
       {props.showId && <Text style={style.text}>{props.id}</Text>}
-      <Image source={{uri: img}} style={{...style.image}} />
+      {img && <Image source={{uri: img}} style={{...style.image}} />}
     </Animated.View>
   );
 };

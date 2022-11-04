@@ -1,10 +1,9 @@
 import {Alert, Button, StyleSheet, Text, View} from 'react-native';
-import {TOTAL, WIDTH} from './const';
+import {images, TOTAL, WIDTH} from './const';
 import React, {useState} from 'react';
 import {seq2cell} from './ds/cell';
 import _ from 'lodash';
 import {ImageItem} from './ImageItem';
-import {Settings} from './ds/settings';
 
 const initGameState = () => {
   return {
@@ -17,7 +16,7 @@ const initGameState = () => {
     }),
     showId: false,
     // 目前九張圖
-    imageName: `${Math.ceil(Math.random() * 9)}.jpg`,
+    imageName: Math.floor(Math.random() * images.length),
   };
 };
 
@@ -47,7 +46,7 @@ export const Gallery = () => {
   return (
     <View style={style.section}>
       <View>
-        <Text style={style.title}>蘇羽君的小屋（一）/ 拼圖遊戲</Text>
+        <Text style={style.title}>羽君遊樂場（一）/ 拼圖遊戲</Text>
 
         <Text style={style.desc}>將圖片滑動到合適的地方就可以了哦~</Text>
       </View>
@@ -58,7 +57,7 @@ export const Gallery = () => {
             index !== gameState.empty && (
               <ImageItem
                 showId={gameState.showId}
-                imageName={gameState.imageName}
+                imageSeq={gameState.imageName}
                 key={index}
                 id={item.id}
                 cell={seq2cell(index)}
